@@ -7,27 +7,27 @@ function Profile({ name, tag, location, image, stats }) {
  <img
       className={css.avatar}
  src={image}
-      alt={name}
-    />
-    <p className={css.userName}>{name}</p>
-    <p className={css.secondaryInfo}>@{tag}</p>
-    <p className={css.secondaryInfo}>{location}</p>
-  </div>
+alt={name}
+ />
+ <p className={css.userName}>{name}</p>
+ <p className={css.secondaryInfo}>@{tag}</p>
+<p className={css.secondaryInfo}>{location}</p>
+ </div>
 
-  <ul className={css.statsList}>
-    <li className={css.statsListItem}>
-      <span>Followers</span>
-      <span className={css.statsCount}>{stats.followers}</span>
-    </li>
-    <li className={css.statsListItem}>
-      <span>Views</span>
-      <span className={css.statsCount}>{stats.views}</span>
-    </li>
-    <li className={css.statsListItem}>
-      <span>Likes</span>
-      <span className={css.statsCount}>{stats.likes}</span>
-    </li>
-  </ul>
+ <ul className={css.statsList}>
+ <li className={css.statsListItem}>
+ <span>Followers</span>
+ <span className={css.statsCount}>{stats.followers}</span>
+ </li>
+ <li className={css.statsListItem}>
+ <span>Views</span>
+ <span className={css.statsCount}>{stats.views}</span>
+ </li>
+ <li className={css.statsListItem}>
+ <span>Likes</span>
+ <span className={css.statsCount}>{stats.likes}</span>
+ </li>
+ </ul>
 </div>
    )
 }
